@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poly', serif;
+    font-family: 'Urbanist', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 0.1% 1%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poly', sans-serif;
+}
+
+#logo {
+    margin-left: 20px;
+    width: 150px;
+}
+.header{
+    flex: 1;
+    text-align: right;
+    height: 8vh;
+    width: 100%;
+    padding: 0 .1%; 
+    background: #4A4A4A; 
+    position: relative;
+}
+
+.header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.header ul li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 10px;
+    padding: 20px 50px;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poly', serif;
+}
+
+.header ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #5899c5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header ul li:hover::after{
+    width: 80%;
+}
+
+.menu_items {
+    margin-top: 7.5px;
+    margin-right: 50px;
+  
+}
+
+.subHeading{
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+#menuGrid{
+    margin: 0px 5%;
+    justify-content: space-around;
+    display: grid;
+    align-content:flex-start;
+    grid-template-rows: auto 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menuGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: top;
+}
+.menuGridArea::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #5899c5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menuGridArea:hover::after{
+    width: 100%;
+}
+
+#Viennoiserie{
+    font-size: 40px;
+}
+#Viennoiserie p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#Patisserie{
+    font-size: 40px;
+}
+#Patisserie p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#Sandwiches{
+    font-size: 40px;
+}
+#Sandwiches p{
+    font-size: 20px;
+    font-style:italic;
+}
+
+#Pain{
+    font-size: 40px;
+}
+#Pain p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.logo{
+    width: 140px;
+}
+
+#hero_image{
+    width: 100%;
+}
+
+#display_image{
+    width: 100%;
+}
+
+
+.footer{
+    height: 30vh;
+    width: 100%;
+    padding: 0 .1%; 
+    background: #4A4A4A; 
+    position: relative;
+    font-family: 'Poly', serif;
+}
+
+
+#footer_items a {
+    display: grid;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 10px;
+    padding: 20px 50px;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poly', serif;
+    
+}
+
+#footer_items ul li{
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.footerLinks{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: top;
+    grid-template-areas: auto;
+}
+
+
+.socials{
+    margin-top: auto;
+    align-content: space-between;
+}
+
+#socialsContainer{
+    margin: 0px 5%;
+    justify-content: space-evenly;
+    display: flex;
+    grid-template-rows: auto 150px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.copyRight{
+    margin-top: auto;
+    align-content: space-between;
+}
+
+#copyContainer{
+    margin: 0px 5%;
+    justify-content: space-around;
+    display: flex;
+    grid-template-rows: auto 150px;
+    grid-template-columns: 1fr;
+     
+}
