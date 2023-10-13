@@ -6,6 +6,8 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+
+
 nav {
     display: flex;
     padding: 0.1% 1%;
@@ -14,18 +16,30 @@ nav {
     font-family: 'Poly', sans-serif;
 }
 
-#logo {
-    margin-left: 20px;
-    width: 150px;
+nav img{
+    width: 140px;
 }
-.header{
-    flex: 1;
-    text-align: right;
-    height: 8vh;
+
+.logo{
+    width: 140px;
+   
+}
+
+#hero_image{
     width: 100%;
-    padding: 0 .1%; 
-    background: #4A4A4A; 
-    position: relative;
+    height: auto;
+}
+
+.header{  
+   flex: 1;
+   text-align: center;
+   height: 8vh;
+   width: 100%;
+   padding: 0 .1%; 
+   background: #4A4A4A; 
+   position: relative;
+   align-items: center;
+   justify-content:space-between;
 }
 
 .header ul li{
@@ -36,6 +50,7 @@ nav {
 }
 
 .header ul li a {
+    /* Common styles for navigation links*/
     display: inline-block;
     color: #ffffff;
     text-align: center;
@@ -48,6 +63,7 @@ nav {
 }
 
 .header ul li::after{
+    /* Common styles for underline effect*/
     content:"";
     width: 0%;
     height: 2px;
@@ -60,6 +76,10 @@ nav {
 .header ul li:hover::after{
     width: 80%;
 }
+
+
+
+/*----------- Menu Item Grid ----------*/
 
 .menu_items {
     margin-top: 7.5px;
@@ -138,19 +158,127 @@ nav {
     font-style: italic;
 }
 
-
-.logo{
-    width: 140px;
-}
-
-#hero_image{
-    width: 100%;
-}
-
 #display_image{
     width: 100%;
 }
 
+/*---------- Home Page ---------*/
+.homeContent{
+    align-items: center;
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;   
+}
+
+h2{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 24px;
+    color: #6d6e70;
+}
+p{
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+#imgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px;
+    justify-content: space-between;
+
+}
+
+#igImages{
+    height: 350px;
+    width: 350px;
+    margin: 20px;
+    display: block;
+ 
+}
+
+@media (max-width: 850px){
+    #imgContainer{
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+.locationContainer{
+    display:flex;
+    justify-content:space-around;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+#locationGrid{
+    margin: 0px 5%;
+    justify-content: space-around;
+    display: grid;
+    align-content:flex-start;
+    grid-template-rows: auto 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#LOWER_GREENVILLE{
+    font-size: 30px;
+}
+#KNOX_STREET{
+    font-size: 30px;
+}
+#OAKLAWN{
+    font-size: 30px;
+}
+#BISHOP_ARTS{
+    font-size: 30px;
+}
+
+.locationGridArea{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: top;
+}
+.locationGridArea::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #5899c5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.locationGridArea:hover::after{
+    width: 100%;
+}
+#mapContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    padding: 40px;
+}
+
+@media (max-width: 1000px){
+    #mapImage{
+        width: 360px;
+        height: 350px;
+    }
+
+    #mapContainer{
+        margin-left: 40px;
+        padding: 20px;
+    }
+}
+/*----------- Footer------------*/
 
 .footer{
     height: 30vh;
@@ -158,12 +286,13 @@ nav {
     padding: 0 .1%; 
     background: #4A4A4A; 
     position: relative;
+    bottom: 0;
     font-family: 'Poly', serif;
 }
 
 
 #footer_items a {
-    display: grid;
+    display: flex;
     color: #ffffff;
     text-align: center;
     margin-right: 10px;
@@ -176,7 +305,7 @@ nav {
 }
 
 #footer_items ul li{
-    display: grid;
+    display: flex;
     justify-content: space-evenly;
 }
 
